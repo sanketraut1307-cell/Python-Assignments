@@ -1,8 +1,8 @@
 # Python Assignments
 
-> **Name:** Sanket Raut  
-> **Roll No:** ADT25SOCB1101  
-> **Subject:** Python Programming
+ **Name:** Sanket Raut  
+ **Roll No:** ADT25SOCB1101  
+ **Subject:** Python Programming
 
 ---
 
