@@ -1,0 +1,38 @@
+class queue:
+    def __init__(self):
+        self.queue = []
+
+    def push(self, item):
+        self.queue.append(item)
+        print(f"{item} is pushed in queue")
+
+    def pop(self):
+        if len(self.queue) == 0:
+            print("queue is empty")
+        else:
+            print(f"{self.queue.pop()} popped from queue")
+
+    def peek(self):
+        if len(self.queue) == 0:
+            print("queue is empty")
+        else:
+            print(f"Top element is {self.queue[0]}")
+
+    def display(self):
+        print("queue:", self.queue)
+
+
+
+s = queue()
+
+
+s.push(10)
+s.push(20)
+s.push(30)
+s.push(40)
+
+s.display()
+
+s.peek()
+s.pop()
+s.display()
