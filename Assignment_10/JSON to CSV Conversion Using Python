@@ -1,0 +1,18 @@
+import json
+import csv
+
+with open("data.json", "r") as json_file:
+    data = json.load(json_file)
+
+
+with open("data.csv", "w", newline="") as csv_file:
+    writer = csv.writer(csv_file)
+
+    
+    writer.writerow(data[0].keys())
+
+    
+    for row in data:
+        writer.writerow(row.values())
+
+print("Conversion successful ")
