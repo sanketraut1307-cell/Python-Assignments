@@ -1,0 +1,21 @@
+import os
+
+path = "images.jpeg"  
+
+if os.path.exists(path):
+    with open(path, "rb") as source:
+        data = source.read()
+
+    with open("grow.bin", "wb") as f:
+        f.write(data)
+
+    print("Success ")
+else:
+    print("File not found ")
+
+
+
+with open("images.jpeg", "rb") as f:
+    data = f.read()
+
+print(data)
